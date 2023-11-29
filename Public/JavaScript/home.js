@@ -46,7 +46,7 @@ function checkCookieStatus(){
 
 async function logOut() {
     
-    let response = await fetch('http://localhost:3000/LoggedUser', {
+    let response = await fetch('/LoggedUser', {
         method: "GET",
         headers: {},
     })
@@ -60,7 +60,7 @@ async function logOut() {
             headers: {},
         })
 
-        location.href = '../index.html'
+        location.href = '../Index.html'
     }
     else{
         console.log('user not logged');
@@ -72,7 +72,7 @@ async function logOut() {
 
 async function changeBanner() {
 
-    let response = await fetch('http://localhost:3000/LoggedUser', {
+    let response = await fetch('/LoggedUser', {
         method: "GET",
         headers: {},
     })

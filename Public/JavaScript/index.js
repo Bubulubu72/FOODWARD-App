@@ -74,7 +74,7 @@ async function registrarUsuario(){
 }
 async function isLogged() {
     
-    let response = await fetch('http://localhost:3000/LoggedUser', {
+    let response = await fetch('/LoggedUser', {
         method: "GET",
         headers: {},
     })

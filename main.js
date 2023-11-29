@@ -25,6 +25,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'Public')));
 app.use(express.json());
 
+app.get('/', (req, res) => {
+    res.sendfile('/Index.html')
+})
+
 app.use('/user', userRouter);
 app.use('/user/login', loginRouter);
 

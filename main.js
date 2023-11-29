@@ -26,7 +26,7 @@ app.use(express.static(path.join(__dirname, 'Public')));
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.sendfile('/Index.html')
+    res.sendfile('./Index.html')
 })
 
 app.use('/user', userRouter);
